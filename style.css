@@ -1,0 +1,29 @@
+body {
+    /*Height and width go by percent*/
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+    /*No scroll bars with next 2 liness*/
+    margin: 0rem;
+    overflow: hidden
+}
+#image-track > .image {
+    width: 40vmin;
+    height: 56vmin;
+    /*Aspect ratio*/
+    object-fit: cover;
+    /*Center on page*/
+    object-position: center;
+}
+#image-track {
+    /*flexible to window size*/
+    display: flex;
+    /*Space between photos*/
+    gap: 4vmin;
+    /*Absolute allows us to change left and top positions*/
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    /*first var is "track percent", so -50% would move pictures to the left; second is height of track*/
+    transform: translate(0%, -50%);
+}
