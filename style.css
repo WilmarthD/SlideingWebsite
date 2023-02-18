@@ -12,8 +12,8 @@ body {
     height: 56vmin;
     /*Aspect ratio*/
     object-fit: cover;
-    /*Center on page*/
-    object-position: center;
+    /*First controls how far left, second controls how far up*/
+    object-position: 100% 50%;
 }
 #image-track {
     /*flexible to window size*/
