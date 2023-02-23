@@ -13,9 +13,6 @@ window.onmousemove = e => {
 
     const percentage = (mouseDelta / maxDelta) * -100,
         nextPercentage = parseFloat(track.dataset.prevPercentage) + percentage; //Keeps track from resetting each time, holding its place when scrolling
-    
-    // nextPercentage = Math.min(nextPercentage, 0);
-    // nextPercentage = Math.max(nextPercentage, 100);
 
     track.dataset.percentage = Math.min(Math.max(nextPercentage, -120), 0);
 
@@ -36,3 +33,12 @@ window.onmouseup = () =>{
     track.dataset.mouseDownAt = "0";
     track.dataset.prevPercentage = track.dataset.percentage;
 }
+function expandImage() {
+    var expandedImage = document.createElement("div");
+    expandedImage.className = "expanded-image";
+    var img = document.createElement("img");
+    img.src = "images/Face.PNG";
+    expandedImage.appendChild(img);
+    document.body.appendChild(expandedImage);
+  }
+  

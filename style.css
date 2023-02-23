@@ -27,3 +27,20 @@ body {
     /*first var is "track percent", so -50% would move pictures to the left; second is height of track*/
     transform: translate(0%, -50%);
 }
+.expanded-image {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .expanded-image img {
+    max-width: 90%;
+    max-height: 90%;
+  }
+  
