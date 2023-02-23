@@ -13,13 +13,11 @@ window.onmousemove = e => {
 
     const percentage = (mouseDelta / maxDelta) * -100,
         nextPercentage = parseFloat(track.dataset.prevPercentage) + percentage; //Keeps track from resetting each time, holding its place when scrolling
-        
-    /*
-    nextPercentage = Math.min(nextPercentage, 0);
-    nextPercentage = Math.max(nextPercentage, -100);
-    */
+    
+    // nextPercentage = Math.min(nextPercentage, 0);
+    // nextPercentage = Math.max(nextPercentage, 100);
 
-    track.dataset.percentage = nextPercentage;
+    track.dataset.percentage = Math.min(Math.max(nextPercentage, -120), 0);
 
     //track.style.transform = `translate(${nextPercentage}%, -50%)`;
     track.animate({
