@@ -3,13 +3,16 @@
     <head>
         <title>Dylan's Test Page</title>
         <link rel="stylesheet" href="style.css">
-        <h1 style="position: absolute; left: 45%; top: 10%; color: blanchedalmond; font-size: 300%; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
+        <h1 style="position: absolute; left: 50%; top: 5%; color: blanchedalmond; font-size: 300%; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
             Dylan Wilmarth
         </h1>
     </head>
     <body>
         <div id="image-track" data-mouse-down-at="0" data-prev-percentage="0">
-            <img class="image" src="images/Face.PNG" draggable="false" onclick="expandImage()"/>
+            <img class="image" src="images/Face.PNG" alt="Face Profile" id="expand-image" draggable="false" /> <!-- onclick="expandImage() -->
+            <div id="expanded-text">
+                <p>Professional Headshot</p>
+            </div>
             <img class="image" src="images/BUSunset.PNG" draggable="false"/>
             <img class="image" src="images/TreeCardNorwayMaple.PNG" draggable="false"/>
             <img class="image" src="images/youngWorker.JPG" draggable="false" />
@@ -19,9 +22,11 @@
         <script src="ourCode.js"></script>
     </body>
 
-
-
-
-
+    <!-- <div id="image-container">
+        <img class="image" src="images/Face.PNG" alt="Face Profile" id="expand-image" draggable="false" /> 
+        <div id="expanded-text">
+            <p>Next text over face!</p>
+        </div>
+    </div> -->
 
 </html>

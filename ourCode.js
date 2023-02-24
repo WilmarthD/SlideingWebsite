@@ -33,12 +33,21 @@ window.onmouseup = () =>{
     track.dataset.mouseDownAt = "0";
     track.dataset.prevPercentage = track.dataset.percentage;
 }
-function expandImage() {
-    var expandedImage = document.createElement("div");
-    expandedImage.className = "expanded-image";
-    var img = document.createElement("img");
-    img.src = "images/Face.PNG";
-    expandedImage.appendChild(img);
-    document.body.appendChild(expandedImage);
-  }
+
+const expandImage = document.getElementById('expand-image');
+const expandedText = document.getElementById('expanded-text');
+
+expandImage.addEventListener('click', function() {
+// toggle the display of the expanded text
+expandedText.style.display = expandedText.style.display === 'none' ? 'block' : 'none';
+});
+
+// function expandImage() {
+//     var expandedImage = document.createElement("div");
+//     expandedImage.className = "expanded-image";
+//     var img = document.createElement("img");
+//     img.src = "images/Face.PNG";
+//     expandedImage.appendChild(img);
+//     document.body.appendChild(expandedImage);
+//   }
   

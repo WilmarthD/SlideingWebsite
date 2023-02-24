@@ -27,7 +27,27 @@ body {
     /*first var is "track percent", so -50% would move pictures to the left; second is height of track*/
     transform: translate(0%, -50%);
 }
-.expanded-image {
+#image-container {
+    position: relative;
+  }
+  
+  #expand-image {
+    cursor: pointer;
+  }
+  
+  #expanded-text {
+    display: none;
+    position: absolute;
+    top: 5;
+    left: 5;
+    /*background-color: whitesmoke;*/
+    -webkit-text-stroke: 1px white;
+    font-size: 25px;
+    padding: 5px;
+    transform: translate(11%, 375%);
+  }
+  
+/* .expanded-image {
     position: fixed;
     top: 0;
     left: 0;
@@ -42,5 +62,5 @@ body {
   .expanded-image img {
     max-width: 90%;
     max-height: 90%;
-  }
+  } */
   
